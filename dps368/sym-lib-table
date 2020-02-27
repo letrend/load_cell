@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name custom)(type Legacy)(uri /home/letrend/workspace/load_cell/kicad_db/lib/custom.lib)(options "")(descr ""))
+  (lib (name DPS368XTSA1)(type Legacy)(uri /home/letrend/workspace/load_cell/kicad_db/lib/DPS368XTSA1.lib)(options "")(descr ""))
+)

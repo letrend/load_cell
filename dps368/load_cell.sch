@@ -1,0 +1,180 @@
+EESchema Schematic File Version 4
+LIBS:load_cell-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L DPS368XTSA1:DPS368XTSA1 U1
+U 1 1 5E57B9DA
+P 5600 3050
+F 0 "U1" H 5600 3617 50  0000 C CNN
+F 1 "DPS368XTSA1" H 5600 3526 50  0000 C CNN
+F 2 "custom_lib:XDCR_DPS368XTSA1" H 5600 3050 50  0001 L BNN
+F 3 "Manufacturer Recommendations" H 5600 3050 50  0001 L BNN
+F 4 "Infineon" H 5600 3050 50  0001 L BNN "Field4"
+F 5 "1.1" H 5600 3050 50  0001 L BNN "Field5"
+F 6 "1.1mm" H 5600 3050 50  0001 L BNN "Field6"
+	1    5600 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 5E57BA75
+P 6200 2600
+F 0 "C1" H 6315 2646 50  0000 L CNN
+F 1 "100n" H 6315 2555 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 6238 2450 50  0001 C CNN
+F 3 "~" H 6200 2600 50  0001 C CNN
+	1    6200 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0101
+U 1 1 5E57BB3A
+P 6200 2450
+F 0 "#PWR0101" H 6200 2300 50  0001 C CNN
+F 1 "+3.3V" H 6215 2623 50  0000 C CNN
+F 2 "" H 6200 2450 50  0001 C CNN
+F 3 "" H 6200 2450 50  0001 C CNN
+	1    6200 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 5E57BB58
+P 6200 3000
+F 0 "C2" H 6315 3046 50  0000 L CNN
+F 1 "100n" H 6315 2955 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 6238 2850 50  0001 C CNN
+F 3 "~" H 6200 3000 50  0001 C CNN
+	1    6200 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0102
+U 1 1 5E57BBAF
+P 6200 3150
+F 0 "#PWR0102" H 6200 3000 50  0001 C CNN
+F 1 "+3.3V" V 6215 3278 50  0000 L CNN
+F 2 "" H 6200 3150 50  0001 C CNN
+F 3 "" H 6200 3150 50  0001 C CNN
+	1    6200 3150
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 5E57BCDB
+P 6200 3350
+F 0 "#PWR0103" H 6200 3100 50  0001 C CNN
+F 1 "GND" V 6205 3222 50  0000 R CNN
+F 2 "" H 6200 3350 50  0001 C CNN
+F 3 "" H 6200 3350 50  0001 C CNN
+	1    6200 3350
+	0    -1   -1   0   
+$EndComp
+NoConn ~ 5000 2950
+$Comp
+L Connector:Conn_01x05_Female J1
+U 1 1 5E57BDFD
+P 4175 3050
+F 0 "J1" H 4069 2625 50  0000 C CNN
+F 1 "Conn_01x05_Female" H 4069 2716 50  0000 C CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_1x05_P1.27mm_Vertical" H 4175 3050 50  0001 C CNN
+F 3 "~" H 4175 3050 50  0001 C CNN
+	1    4175 3050
+	-1   0    0    1   
+$EndComp
+Text Label 5000 3050 2    50   ~ 0
+sck
+Text Label 5000 3150 2    50   ~ 0
+sdi
+Text Label 5000 3250 2    50   ~ 0
+sdo
+Text Label 4375 3150 0    50   ~ 0
+sdo
+Text Label 4375 2950 0    50   ~ 0
+sdi
+$Comp
+L power:GND #PWR0104
+U 1 1 5E57BF09
+P 4375 3250
+F 0 "#PWR0104" H 4375 3000 50  0001 C CNN
+F 1 "GND" V 4380 3122 50  0000 R CNN
+F 2 "" H 4375 3250 50  0001 C CNN
+F 3 "" H 4375 3250 50  0001 C CNN
+	1    4375 3250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+3.3V #PWR0105
+U 1 1 5E57BF32
+P 4375 2850
+F 0 "#PWR0105" H 4375 2700 50  0001 C CNN
+F 1 "+3.3V" V 4390 2978 50  0000 L CNN
+F 2 "" H 4375 2850 50  0001 C CNN
+F 3 "" H 4375 2850 50  0001 C CNN
+	1    4375 2850
+	0    1    1    0   
+$EndComp
+Text Label 4375 3050 0    50   ~ 0
+sck
+$Comp
+L Device:R R2
+U 1 1 5E57BBD4
+P 4875 2150
+F 0 "R2" H 4945 2196 50  0000 L CNN
+F 1 "10k" H 4945 2105 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 4805 2150 50  0001 C CNN
+F 3 "~" H 4875 2150 50  0001 C CNN
+	1    4875 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5E57BC28
+P 4500 2150
+F 0 "R1" H 4570 2196 50  0000 L CNN
+F 1 "10k" H 4570 2105 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 4430 2150 50  0001 C CNN
+F 3 "~" H 4500 2150 50  0001 C CNN
+	1    4500 2150
+	1    0    0    -1  
+$EndComp
+Text Label 4500 2300 3    50   ~ 0
+sck
+Text Label 4875 2300 3    50   ~ 0
+sdi
+$Comp
+L power:+3.3V #PWR0106
+U 1 1 5E57BCF6
+P 4500 2000
+F 0 "#PWR0106" H 4500 1850 50  0001 C CNN
+F 1 "+3.3V" V 4515 2128 50  0000 L CNN
+F 2 "" H 4500 2000 50  0001 C CNN
+F 3 "" H 4500 2000 50  0001 C CNN
+	1    4500 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0107
+U 1 1 5E57BD1F
+P 4875 2000
+F 0 "#PWR0107" H 4875 1850 50  0001 C CNN
+F 1 "+3.3V" V 4890 2128 50  0000 L CNN
+F 2 "" H 4875 2000 50  0001 C CNN
+F 3 "" H 4875 2000 50  0001 C CNN
+	1    4875 2000
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
