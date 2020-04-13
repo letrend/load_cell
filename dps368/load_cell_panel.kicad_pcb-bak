@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 193)
+    (drawings 196)
     (tracks 736)
     (zones 0)
     (modules 96)
@@ -3781,6 +3781,9 @@
     )
   )
 
+  (gr_line (start 142 73) (end 136 73) (layer Eco1.User) (width 0.2))
+  (gr_line (start 153 73) (end 147 73) (layer Eco1.User) (width 0.2))
+  (gr_line (start 164 73) (end 158 73) (layer Eco1.User) (width 0.2))
   (gr_line (start 155 95) (end 155 101) (layer Eco1.User) (width 0.2))
   (gr_line (start 173 107) (end 175 107) (layer Eco2.User) (width 0.2))
   (gr_line (start 125 107) (end 127 107) (layer Eco2.User) (width 0.2))
